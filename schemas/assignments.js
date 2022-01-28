@@ -1,10 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const assignmentsSchema = new Schema({
-  unique_id: {
-    type: String,
-    required: true,
-  },
   author: {
     type: String,
     required: true,
@@ -13,6 +9,12 @@ const assignmentsSchema = new Schema({
     type: String,
   },
   description: {
+    type: String,
+  },
+  comment: {
+    type: String,
+  },
+  url: {
     type: String,
   },
 });
